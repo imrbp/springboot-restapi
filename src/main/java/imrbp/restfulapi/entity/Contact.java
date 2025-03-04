@@ -19,8 +19,6 @@ public class Contact {
     @Id
     private String id;
 
-    private String username;
-
     @Column(name = "first_name")
     private String firstName;
 
@@ -37,5 +35,5 @@ public class Contact {
     private User user;
 
     @OneToMany(mappedBy = "contact")
-    private List<Contact> contacts;
+    private List<Address> addresses;
 }

@@ -1,7 +1,6 @@
 package imrbp.restfulapi.service;
 
 import imrbp.restfulapi.entity.User;
-import imrbp.restfulapi.exception.ApiException;
 import imrbp.restfulapi.model.RegisterUserRequest;
 import imrbp.restfulapi.repository.UserRepository;
 import imrbp.restfulapi.security.BCrypt;
@@ -10,8 +9,7 @@ import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Service;
+import org.springframework.http.HttpStatus; import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.beans.Transient;

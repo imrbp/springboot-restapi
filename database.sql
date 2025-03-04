@@ -1,6 +1,6 @@
-CREATE DATABASE restful_api;
+CREATE DATABASE java_restfulapi;
 
--- USE restful_api;
+-- USE java_restfulapi;
 
 CREATE TABLE users
 (

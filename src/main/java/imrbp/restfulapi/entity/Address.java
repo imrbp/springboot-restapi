@@ -16,9 +16,6 @@ public class Address {
     @Id
     private String id;
 
-    @Column(name = "contact_id")
-    private String contactId;
-
     private String street;
     private String city;
     private String province;
@@ -28,6 +25,6 @@ public class Address {
     private String postalCode;
 
     @ManyToOne
-    @JoinColumn(name = "cotnact_id", referencedColumnName = "id")
+    @JoinColumn(name = "contact_id", referencedColumnName = "id")
     private Contact contact;
 }
